@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Photo Gallery</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+  
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <!-- Link to baguetteBox lightbox CSS from CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css"
+  />
 </head>
 <body>
 
+  <!-- Main container to center gallery and control width -->
   <div class="gallery-container">
 
+    <!-- Wrapper to center the search input and add spacing -->
     <div class="search-wrapper">
-      <input type="text" id="search" placeholder="Search...">
+      <!-- Search input field for filtering photos by caption -->
+      <input type="text" id="search" placeholder="Search..." />
     </div>
 
+    <!-- Gallery grid containing all thumbnail links -->
     <div class="gallery">
+      <!-- Each anchor links to large image and contains thumbnail image -->
+      <!-- The 'data-caption' attribute holds the caption text for filtering and lightbox display -->
       <a href="images/large/01.jpg" data-caption="Hay Bales">
-        <img src="images/thumbs/01.jpg" alt="Hay Bales">
+        <img src="images/thumbs/01.jpg" alt="Hay Bales" />
       </a>
       <a href="images/large/02.jpg" data-caption="Lake">
-        <img src="images/thumbs/02.jpg" alt="Lake">
+        <img src="images/thumbs/02.jpg" alt="Lake" />
       </a>
       <a href="images/large/03.jpg" data-caption="Canyon">
-        <img src="images/thumbs/03.jpg" alt="Canyon">
+        <img src="images/thumbs/03.jpg" alt="Canyon" />
       </a>
       <a href="images/large/04.jpg" data-caption="Iceberg">
-        <img src="images/thumbs/04.jpg" alt="Iceberg">
+        <img src="images/thumbs/04.jpg" alt="Iceberg" />
       </a>
       <a href="images/large/05.jpg" data-caption="Desert">
-        <img src="images/thumbs/05.jpg" alt="Desert">
+        <img src="images/thumbs/05.jpg" alt="Desert" />
       </a>
       <a href="images/large/06.jpg" data-caption="Fall">
-        <img src="images/thumbs/06.jpg" alt="Fall">
+        <img src="images/thumbs/06.jpg" alt="Fall" />
       </a>
       <a href="images/large/07.jpg" data-caption="Plantation">
-        <img src="images/thumbs/07.jpg" alt="Plantation">
+        <img src="images/thumbs/07.jpg" alt="Plantation" />
       </a>
       <a href="images/large/08.jpg" data-caption="Dunes">
-        <img src="images/thumbs/08.jpg" alt="Dunes">
+        <img src="images/thumbs/08.jpg" alt="Dunes" />
       </a>
       <a href="images/large/09.jpg" data-caption="Countryside Lane">
-        <img src="images/thumbs/09.jpg" alt="Countryside Lane">
+        <img src="images/thumbs/09.jpg" alt="Countryside Lane" />
       </a>
       <a href="images/large/10.jpg" data-caption="Sunset">
-        <img src="images/thumbs/10.jpg" alt="Sunset">
+        <img src="images/thumbs/10.jpg" alt="Sunset" />
       </a>
       <a href="images/large/11.jpg" data-caption="Cave">
-        <img src="images/thumbs/11.jpg" alt="Cave">
+        <img src="images/thumbs/11.jpg" alt="Cave" />
       </a>
       <a href="images/large/12.jpg" data-caption="Bluebells">
-        <img src="images/thumbs/12.jpg" alt="Bluebells">
+        <img src="images/thumbs/12.jpg" alt="Bluebells" />
       </a>
     </div>
 
   </div>
 
+  <!-- Load baguetteBox.js from CDN for lightbox functionality -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+  <!-- Load provided searchFilter plugin for filtering photos -->
   <script src="js/searchFilter.js"></script>
+  <!-- Load custom app.js for initializing plugins -->
   <script src="js/app.js"></script>
 
 </body>
