@@ -1,0 +1,29 @@
+/* Centers the search bar and adds spacing */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Styles the actual input */
+#search {
+  padding: 12px 20px;
+  width: 60%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+.gallery-container {
+  max-width: 1024px;    /* constrains width */
+  margin: 0 auto;       /* centers horizontally */
+  padding: 40px 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;           /* fill the container */
+}
