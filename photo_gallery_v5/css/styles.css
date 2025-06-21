@@ -1,29 +1,42 @@
-/* Centers the search bar and adds spacing */
+/* Container to center the gallery and limit width */
+.gallery-container {
+  max-width: 1024px;      /* Matches design width */
+  margin: 0 auto;         /* Center horizontally */
+  padding: 40px 20px;     /* Space inside container */
+}
+
+/* Wrapper to center the search bar and give spacing below */
 .search-wrapper {
   display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+  justify-content: center; /* Horizontally center search bar */
+  margin-bottom: 30px;     /* Space between search and gallery */
 }
 
-/* Styles the actual input */
+/* Style for the search input field */
 #search {
-  padding: 12px 20px;
-  width: 60%;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+  padding: 12px 20px;     /* Padding inside input */
+  width: 60%;             /* Responsive width */
+  font-size: 16px;        /* Readable font size */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 6px;     /* Rounded corners */
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.gallery-container {
-  max-width: 1024px;    /* constrains width */
-  margin: 0 auto;       /* centers horizontally */
-  padding: 40px 20px;
-}
-
+/* CSS Grid container for gallery thumbnails */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
-  width: 100%;           /* fill the container */
+}
+
+/* Each anchor displays block to fill grid cell */
+.gallery a {
+  display: block;
+}
+
+/* Thumbnail images take full width of anchor and keep aspect ratio */
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
