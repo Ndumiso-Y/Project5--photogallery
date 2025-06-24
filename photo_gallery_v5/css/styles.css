@@ -2,7 +2,7 @@
 .gallery-container {
   max-width: 1024px;      /* Matches design width */
   margin: 0 auto;         /* Center horizontally */
-  padding: 40px 20px;     /* Space inside container */
+  padding: 40px 20px;     /* Space inside c-ontainer */
 }
 
 /* Wrapper to center the search bar and give spacing below */
