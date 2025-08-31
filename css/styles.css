@@ -1,0 +1,42 @@
+
+.gallery-container {
+  max-width: 1024px;      
+  margin: 0 auto;        
+  padding: 40px 20px;    
+}
+
+/* Wrapper to center the search bar and give spacing below */
+.search-wrapper {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 30px;    
+}
+
+/* Style for the search input field */
+#search {
+  padding: 12px 20px;    
+  width: 60%;             
+  font-size: 16px;        
+  border: 1px solid #ccc; 
+  border-radius: 6px;     
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* CSS Grid container for gallery thumbnails */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+/* Each anchor displays block to fill grid cell */
+.gallery a {
+  display: block;
+}
+
+/* Thumbnail images take full width of anchor and keep aspect ratio */
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
